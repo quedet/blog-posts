@@ -50,3 +50,13 @@
         color: initial;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .newest-blog {
+        display: block;
+
+        .blog-item {
+            margin: 1rem 0;
+        }
+    }
+}
