@@ -1,32 +1,32 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import * as HeaderStyle from '../styles/header.module.scss'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <header className={HeaderStyle.header}>
+    <div className={HeaderStyle.headerWrapper}>
+      <div className={HeaderStyle.navbar}>
+        <div className={HeaderStyle.navbarBrand}>
+          <div className={HeaderStyle.navbarItem}>
+            <Link to="/" className={HeaderStyle.navbarLink}>{ siteTitle }</Link>
+          </div>
+        </div>
+        <div className={HeaderStyle.navbarMenu}>
+          <div className={HeaderStyle.navbarItem}>
+            <Link className={HeaderStyle.navbarLink} to="/">Home</Link>
+          </div>
+          <div className={HeaderStyle.navbarItem}>
+            <Link className={HeaderStyle.navbarLink} to="/blogs">Blogs</Link>
+          </div>
+          <div className={HeaderStyle.navbarItem}>
+            <Link className={HeaderStyle.navbarLink} to="/blogs_v2">Blogs V2</Link>
+          </div>
+          <div className={HeaderStyle.navbarItem}>
+            <Link className={HeaderStyle.navbarLink} to="/contact">Contact</Link>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 )

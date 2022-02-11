@@ -1,0 +1,52 @@
+.blog-item {
+    padding: 1rem 0;
+    margin: 0.75rem 0;
+    
+    border-bottom: 1px solid #e1dfdd;
+}
+
+.oldest-blog, .newest-blog {
+    margin: 3rem 0;
+}
+
+.newest-blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    
+    .blog-item {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.09);
+        border: none;
+        padding: 1rem;
+        margin: 0;
+    }
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .blog-title {
+        a {
+            color: #004578;
+        }
+    }
+
+    .blog-date {
+        color: #106ebe;
+    }
+}
+
+.blog-content {
+    margin: 0.75rem 0;
+}
+
+.blog-footer, .pagination {
+    .link {
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        background-color: #deecf9;
+        color: initial;
+    }
+}

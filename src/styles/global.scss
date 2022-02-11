@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    line-height: 1.45;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.app {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.app-content {
+    padding: 1rem 0;
+}
+
+.single-blog-header, .single-blog-content {
+    padding: 1rem 0;
+}
+
+
+.single-blog-header {
+    border-bottom: 1px solid #e1dfdd;
+}
+
+.single-blog-content {
+    p {
+        padding: 0.75rem 0;
+    }
+}
