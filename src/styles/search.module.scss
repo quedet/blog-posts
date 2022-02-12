@@ -1,0 +1,18 @@
+.search-form {
+    .search-form-items {
+        display: flex;
+    }
+
+    .search-form-item {
+        input {
+            border: none;
+            padding: 0.75rem;
+            background-color: rgb(243, 242, 242);
+            font-size: 1rem;
+        }
+
+        .search-button {
+            cursor: pointer;
+        }
+    }
+}

@@ -2,6 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import * as HeaderStyle from '../styles/header.module.scss'
+import Search from "./search"
 
 const Header = ({ siteTitle }) => (
   <header className={HeaderStyle.header}>
@@ -25,6 +26,9 @@ const Header = ({ siteTitle }) => (
           <div className={HeaderStyle.navbarItem}>
             <Link className={HeaderStyle.navbarLink} to="/contact">Contact</Link>
           </div>
+        </div>
+        <div className="">
+          <Search />
         </div>
       </div>
     </div>
